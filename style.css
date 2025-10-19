@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f8f9fb;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 400px;
+  max-width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+.header h2 {
+  font-size: 1.4rem;
+  color: #333;
+}
+.header p {
+  color: gray;
+  font-size: 0.85rem;
+}
+
+/* Priority section */
+.priority-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.priority {
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.priority.high {
+  background: #ffe5e5;
+  color: #b10000;
+}
+.priority.medium {
+  background: #fff5cc;
+  color: #b37400;
+}
+.priority.low {
+  background: #e6f0ff;
+  color: #0046ad;
+}
+
+/* Notification cards */
+.notifications {
+  padding: 12px;
+  overflow-y: auto;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-left: 5px solid transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+.card span {
+  display: block;
+  font-size: 0.75rem;
+  color: gray;
+  margin-top: 6px;
+}
+
+.card.high {
+  background: #fff2f2;
+  border-left-color: #ff4d4d;
+}
+.card.medium {
+  background: #fffbe6;
+  border-left-color: #ffc107;
+}
+.card.low {
+  background: #f2f7ff;
+  border-left-color: #4d8bff;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+.nav-item {
+  text-decoration: none;
+  color: gray;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.nav-item.active {
+  color: #ff6600;
+  font-weight: 600;
+}
+.nav-item:hover {
+  color: #ff6600;
+}
